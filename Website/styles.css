@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px; 
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#header {
+   font-size: xx-large;
+   font-weight: 700;
+   font-family: serif;
+}
+
+.sl {
+    border-radius: 5px;
+    padding: 7px;
+    background-color: orange;
+    color: black;
+}
+
+#navbar {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar-nav li a {
+    color: white;
+    font-weight: 500;
+    float: left;
+    transition: ease 0.3s;
+}
+
+.navbar-nav li a:hover {
+   color: orange;
+   font-size: 1.1rem;
+}
+/* ------------CAROUSEL-----------*/
+
+#carouselExampleIndicators {
+    position: relative;
+    width: 100%;
+}
+.c-item {
+    height: 530px;
+}
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+/* --------------Grid Gallery System------------*/
+
+.image {
+    display: block;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: ease 0.6s;
+    background-color: rgba(255,255,255,0.4);  
+}
+
+.caption {
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.tumbnail:hover {
+    transform: translate(-4px);
+}
+
+.img-container:hover .overlay {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+/* --------------Card System------------*/
+
+.social-icons {
+   display: flex;
+   justify-content: center;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0px 12px;
+}
+
+.social-icons img:hover {
+    width: 35px;
+    margin: 0px 10px;
+    transition: ease 0.5s;
+    margin-bottom: 5px;
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.btnFeed {
+    display: flex;
+    justify-content: center;
+}
+
+#feedbacks {
+    height: 150px;
+}
